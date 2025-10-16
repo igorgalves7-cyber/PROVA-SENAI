@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f8f4;
+    color: #2e2e2e;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0e5da;
+    padding: 10px 30px;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2e2e2e;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4d8755;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f1f5f0;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Cards */
+.destaques {
+    text-align: center;
+    padding: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 25%;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Sobre Nós */
+.sobre {
+    padding: 50px;
+    text-align: center;
+}
+
+.sobre-bloco {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.sobre-bloco.inverso {
+    flex-direction: row-reverse;
+}
+
+.sobre-bloco img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.sobre-bloco .texto {
+    width: 45%;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2e2e2e;
+    color: white;
+    padding: 20px 0;
+}
