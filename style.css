@@ -5,6 +5,7 @@ body {
     color: #2e2e2e;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -29,7 +30,12 @@ nav a:hover {
     color: #4d8755;
 }
 
-/* Hero Section */
+nav a.ativo {
+    font-weight: bold;
+    color: #4d8755;
+}
+
+/* Hero */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -47,6 +53,23 @@ nav a:hover {
     border-radius: 10px;
 }
 
+/* Botão */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4d8755;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3b6c45;
+}
+
+/* Animação do título */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -60,7 +83,7 @@ nav a:hover {
     }
 }
 
-/* Cards */
+/* Destaques */
 .destaques {
     text-align: center;
     padding: 50px;
